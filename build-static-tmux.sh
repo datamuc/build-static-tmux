@@ -162,6 +162,7 @@ checkResult ()
         echo ""
         if [ ${DUMP_LOG_ON_ERROR} = 0 ]; then
             echo "Check Buildlog in ${LOG_DIR}/${LOG_FILE}"
+            cat "${LOG_DIR}/${LOG_FILE}"
         else
             echo "last ${LOG_LINES} from ${LOG_DIR}/${LOG_FILE}:"
             echo "-----------------------------------------------"
