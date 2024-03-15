@@ -27,6 +27,7 @@ jobs:
           git
           wget
           gcc
+          make
     - uses: actions/checkout@v4
     # Do the build step
     - name: run the buildscript
